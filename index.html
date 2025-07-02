@@ -1,62 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CHIRP - Comparative Hepatobiliary & Intestinal Research Program</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Website Banner</title>
+<style>
+  body {
+    margin: 0;
+    background-color: #fbfbf9;
+    font-family: Arial, sans-serif;
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fbfbf9;
+    padding: 15px 30px;
+    gap: 40px;
+  }
+  .nav-group {
+    display: flex;
+    gap: 30px;
+  }
+  .nav-link {
+    position: relative;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    padding-bottom: 8px;
+  }
+  /* Black underline for first group */
+  .nav-group.first .nav-link {
+    border-bottom: 3px solid black;
+  }
+  /* Black underline for second group */
+  .nav-group.second .nav-link {
+    border-bottom: 3px solid black;
+  }
+  /* Logo style */
+  .logo {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0 40px;
+    user-select: none;
+  }
+  /* Make the logo bigger and centered vertically */
+  .logo {
+    line-height: 1;
+  }
+</style>
 </head>
-<body class="text-gray-800 font-sans" style="background-color: #fbfbf9;">
-  <!-- Header -->
-  <header class="bg-white shadow">
-    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-      <div class="flex space-x-8 text-sm font-semibold uppercase">
-        <a href="#" class="hover:text-[#bf1331]">Our Team</a>
-        <a href="#" class="hover:text-[#bf1331]">Publications</a>
-        <a href="#" class="hover:text-[#bf1331]">Projects</a>
-        <a href="#" class="hover:text-[#bf1331]">Conferences</a>
-        <a href="#" class="hover:text-[#bf1331]">Educational</a>
-        <a href="#" class="hover:text-[#bf1331]">Contact Us</a>
-      </div>
-      <div>
-        <img src="your-logo.png" alt="CHIRP Logo" class="h-12 mx-auto"> <!-- replace with your logo -->
-      </div>
-    </div>
-  </header>
+<body>
 
-  <!-- Banner -->
-  <section class="flex justify-between text-white font-semibold italic text-lg py-4 px-6" style="background-color: #bf1331;">
-    <div>Harnessing the therapeutic power of microbes</div>
-    <div>Established in 2019</div>
-  </section>
+<nav class="navbar" role="navigation">
+  <div class="nav-group first" aria-label="First group navigation links">
+    <a href="our-team.html" class="nav-link">Our Team</a>
+    <a href="publications.html" class="nav-link">Publications</a>
+    <a href="projects.html" class="nav-link">Projects</a>
+  </div>
 
-  <!-- Main Content -->
-  <main class="max-w-6xl mx-auto px-4 py-8">
-    <div class="flex flex-col md:flex-row items-start md:space-x-8">
-      <!-- Text content -->
-      <div class="flex-1 space-y-4">
-        <p>CHIRP is comprised of a team of basic research and clinician scientists at the forefront of cutting-edge research and innovative study design. CHIRP was developed to streamline multidisciplinary research with a specific focus on team science. The axis of our program centers on the advancement of knowledge pertaining to gastrointestinal, hepatobiliary, and pancreatic diseases in dogs and cats, coupled with dedicated enhancement of animal and human health through translational scientific discoveries.</p>
+  <div class="logo">your-logo</div>
 
-        <p><strong>Vision:</strong> Establish an integrated research team dedicated to leading multidisciplinary research endeavors aimed at enhancing hepatobiliary and intestinal comparative and translational medicine.</p>
+  <div class="nav-group second" aria-label="Second group navigation links">
+    <a href="conferences.html" class="nav-link">Conferences</a>
+    <a href="educational.html" class="nav-link">Educational</a>
+    <a href="contact.html" class="nav-link">Contact Us</a>
+  </div>
+</nav>
 
-        <p><strong>Mission:</strong> To advance collaborative research at the interface of animal and human health.</p>
-
-        <p><strong>Strategic Goals:</strong></p>
-        <ul class="list-disc list-inside space-y-1">
-          <li>Enhance collaborative research efforts focused on gastrointestinal, liver, and pancreatic diseases of companion animals.</li>
-          <li>Build on the unique and diverse strengths of CHIRP investigators, the OSU CVM, and broader OSU community to integrate expertise within this scientific space.</li>
-          <li>Develop and leverage translational large animal (canine and feline) models of naturally occurring hepatobiliary and intestinal diseases to enhance animal and human health.</li>
-          <li>Promote lifelong academic curiosity within both the local and global scientific community through teaching, mentorship, synergistic learning, and discovery.</li>
-        </ul>
-
-        <p><strong>Core Values:</strong> Innovation, Collaboration, Transparency, Discovery, Credibility</p>
-      </div>
-
-      <!-- Image -->
-      <div class="mt-6 md:mt-0">
-        <img src="group-photo.jpg" alt="CHIRP Team" class="rounded shadow-lg max-w-xs"> <!-- replace with your group photo -->
-      </div>
-    </div>
-  </main>
 </body>
 </html>
