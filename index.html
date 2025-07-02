@@ -32,23 +32,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(251, 251, 249, 0.7); /* semi-transparent */
-    padding: 15px 30px;
+    /* remove background blur: make fully transparent */
+    background-color: transparent;
+    padding: 20px 40px; /* more padding for larger nav */
     box-sizing: border-box;
     z-index: 10;
   }
 
   .nav-group {
     display: flex;
-    gap: 40px; /* more space between nav words */
+    gap: 60px; /* more space between nav words */
   }
 
   .nav-spacer {
-    flex: 0 0 200px; /* big space in the middle */
+    flex: 0 0 300px; /* even bigger space between groups */
   }
 
   .nav-link {
-    font-size: 18px;
+    font-size: 22px; /* make words bigger */
     color: black;
     text-decoration: none;
     font-weight: 600;
