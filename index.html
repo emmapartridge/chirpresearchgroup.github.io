@@ -31,32 +31,32 @@
 
   nav.navbar {
     position: absolute;
-    top: 0;
+    top: 80px; /* move nav bar about 1 inch lower (around 1 inch ≈ 80-100px) */
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: transparent; /* fully transparent */
-    padding: 25px 50px; /* more padding for taller nav */
+    background-color: transparent;
+    padding: 25px 50px;
     box-sizing: border-box;
     z-index: 10;
   }
 
   .nav-group {
     display: flex;
-    gap: 80px; /* much more space between words */
+    gap: 100px; /* even more space between words */
   }
 
   .nav-spacer {
-    flex: 0 0 350px; /* even bigger space in the middle */
+    flex: 0 0 400px; /* large center gap for logo area */
   }
 
   .nav-link {
-    font-size: 24px; /* larger text */
+    font-size: 24px;
     color: black;
     text-decoration: none;
     font-weight: 600;
-    letter-spacing: 1px; /* add spacing between letters */
+    letter-spacing: 1px; /* spread letters a bit */
   }
 
   .nav-link:hover {
