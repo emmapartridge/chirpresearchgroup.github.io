@@ -3,13 +3,14 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Website Banner</title>
+<title>Website Banner with Ribbons and Logo Image</title>
 <style>
   body {
     margin: 0;
     background-color: #fbfbf9;
     font-family: Arial, sans-serif;
   }
+  /* Navbar styling */
   .navbar {
     display: flex;
     align-items: center;
@@ -21,32 +22,58 @@
   .nav-group {
     display: flex;
     gap: 30px;
+    position: relative;
+    padding-bottom: 8px;
+  }
+  /* Black continuous underline bar for first group */
+  .nav-group.first {
+    border-bottom: 3px solid black;
+  }
+  /* Black continuous underline bar for second group */
+  .nav-group.second {
+    border-bottom: 3px solid black;
   }
   .nav-link {
-    position: relative;
     font-size: 18px;
     color: black;
     text-decoration: none;
-    padding-bottom: 8px;
   }
-  /* Black underline for first group */
-  .nav-group.first .nav-link {
-    border-bottom: 3px solid black;
+
+  /* Container for ribbons and logo */
+  .ribbons-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto 40px; /* margin top and bottom */
+    text-align: center;
   }
-  /* Black underline for second group */
-  .nav-group.second .nav-link {
-    border-bottom: 3px solid black;
+  /* Red ribbons */
+  .ribbon {
+    background-color: #bf1331;
+    height: 12px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
   }
-  /* Logo style */
-  .logo {
-    font-size: 32px;
-    font-weight: bold;
-    margin: 0 40px;
+  /* space between ribbons */
+  .ribbon.spacer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  /* Logo positioned between ribbons */
+  .ribbons-container .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     user-select: none;
+    white-space: nowrap;
+    background-color: #fbfbf9;
+    padding: 0 20px;
   }
-  /* Make the logo bigger and centered vertically */
-  .logo {
-    line-height: 1;
+  .ribbons-container .logo img {
+    height: 48px; /* adjust as needed */
+    display: block;
   }
 </style>
 </head>
@@ -59,14 +86,21 @@
     <a href="projects.html" class="nav-link">Projects</a>
   </div>
 
-  <div class="logo">your-logo</div>
-
   <div class="nav-group second" aria-label="Second group navigation links">
     <a href="conferences.html" class="nav-link">Conferences</a>
     <a href="educational.html" class="nav-link">Educational</a>
     <a href="contact.html" class="nav-link">Contact Us</a>
   </div>
 </nav>
+
+<!-- Ribbons and logo section -->
+<div class="ribbons-container" aria-label="Logo between two ribbons">
+  <div class="ribbon"></div>
+  <div class="logo">
+    <img src="your-logo.png" alt="Your Logo" />
+  </div>
+  <div class="ribbon spacer"></div>
+</div>
 
 </body>
 </html>
