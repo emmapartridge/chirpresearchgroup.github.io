@@ -4,11 +4,15 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>CHIRP Research Group</title>
+
+<!-- Import League Spartan from Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700&display=swap" rel="stylesheet">
+
 <style>
   body {
     margin: 0;
     background-color: #fbfbf9;
-    font-family: Arial, sans-serif;
+    font-family: 'League Spartan', sans-serif;
   }
 
   .banner-container {
@@ -20,7 +24,7 @@
   .banner {
     width: 100%;
     height: auto;
-    object-fit: contain;  /* show whole image without cropping */
+    object-fit: contain; /* show full image without cropping */
     display: block;
     background-color: #fbfbf9;
   }
@@ -32,27 +36,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* remove background blur: make fully transparent */
-    background-color: transparent;
-    padding: 20px 40px; /* more padding for larger nav */
+    background-color: transparent; /* fully transparent */
+    padding: 25px 50px; /* more padding for taller nav */
     box-sizing: border-box;
     z-index: 10;
   }
 
   .nav-group {
     display: flex;
-    gap: 60px; /* more space between nav words */
+    gap: 80px; /* much more space between words */
   }
 
   .nav-spacer {
-    flex: 0 0 300px; /* even bigger space between groups */
+    flex: 0 0 350px; /* even bigger space in the middle */
   }
 
   .nav-link {
-    font-size: 22px; /* make words bigger */
+    font-size: 24px; /* larger text */
     color: black;
     text-decoration: none;
     font-weight: 600;
+    letter-spacing: 1px; /* add spacing between letters */
   }
 
   .nav-link:hover {
