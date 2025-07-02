@@ -3,123 +3,25 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Website Banner with Ribbons and Logo Image</title>
+<title>Simple Banner Page</title>
 <style>
   body {
     margin: 0;
     background-color: #fbfbf9;
     font-family: Arial, sans-serif;
   }
-  /* Navbar styling */
-  .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #fbfbf9;
-    padding: 15px 30px;
-    gap: 40px;
-  }
-  .nav-group {
-    display: flex;
-    gap: 30px;
-    position: relative;
-    padding-bottom: 8px;
-  }
-  /* Black continuous underline bar for first group */
-  .nav-group.first {
-    border-bottom: 3px solid black;
-  }
-  /* Black continuous underline bar for second group */
-  .nav-group.second {
-    border-bottom: 3px solid black;
-  }
-  .nav-link {
-    font-size: 18px;
-    color: black;
-    text-decoration: none;
-  }
-
-  /* Container for ribbons and logo */
-  .ribbons-container {
-    position: relative;
+  .banner {
     width: 100%;
-    max-width: 1200px;
-    margin: 20px auto 40px; /* margin top and bottom */
-    text-align: center;
-  }
-  /* Red ribbons */
-  .ribbon {
-    background-color: #bf1331;
-    height: 40px;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
-    box-sizing: border-box;
-  }
-  /* space between ribbons */
-  .ribbon.spacer {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    justify-content: flex-end; /* Right align text on bottom ribbon */
-  }
-  .ribbon.left-text {
-    justify-content: flex-start; /* Left align text on top ribbon */
-  }
-  /* Text inside ribbons */
-  .ribbon-text {
-    color: #fbfbf9;
-    font-style: italic;
-    font-size: 16px;
-  }
-
-  /* Logo positioned between ribbons */
-  .ribbons-container .logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    user-select: none;
-    white-space: nowrap;
-    background-color: #fbfbf9;
-    padding: 0 20px;
-  }
-  .ribbons-container .logo img {
-    height: 48px; /* adjust as needed */
+    max-height: 300px;
+    object-fit: cover;
     display: block;
   }
 </style>
 </head>
 <body>
 
-<nav class="navbar" role="navigation">
-  <div class="nav-group first" aria-label="First group navigation links">
-    <a href="our-team.html" class="nav-link">Our Team</a>
-    <a href="publications.html" class="nav-link">Publications</a>
-    <a href="projects.html" class="nav-link">Projects</a>
-  </div>
-
-  <div class="nav-group second" aria-label="Second group navigation links">
-    <a href="conferences.html" class="nav-link">Conferences</a>
-    <a href="educational.html" class="nav-link">Educational</a>
-    <a href="contact.html" class="nav-link">Contact Us</a>
-  </div>
-</nav>
-
-<!-- Ribbons and logo section -->
-<div class="ribbons-container" aria-label="Logo between two ribbons">
-  <div class="ribbon left-text">
-    <span class="ribbon-text">Harnessing the therapeutic power of microbes</span>
-  </div>
-  <div class="logo">
-    <img src="your-logo.png" alt="Your Logo" />
-  </div>
-  <div class="ribbon spacer">
-    <span class="ribbon-text">Established since 2019</span>
-  </div>
-</div>
+<!-- Banner Image -->
+<img src="banner.png" alt="Banner Image" class="banner" />
 
 </body>
 </html>
