@@ -10,52 +10,47 @@
       margin: 0;
       background-color: #fbfbf9;
       font-family: 'Roboto', sans-serif;
+      color: #000;
     }
     .banner {
-      position: relative;
       width: 100%;
-      height: 400px;
+      height: 500px;
       background: url('banner.png') no-repeat center center;
       background-size: cover;
+      position: relative;
     }
     .navbar {
       position: absolute;
-      top: 50px; /* adjust vertical position */
-      width: 100%;
+      top: 30px;
+      left: 0;
+      right: 0;
       display: flex;
       justify-content: center;
-      gap: 90px; /* spacing between words */
-      font-size: 22px;
+      align-items: center;
+      flex-wrap: wrap;
+      z-index: 2;
     }
     .navbar a {
-      text-decoration: none;
       color: black;
+      text-decoration: none;
+      font-size: 22px;
+      margin: 0 45px; /* wider spacing */
+      font-weight: 700;
     }
-    .spacer {
-      width: 200px; /* big space for logo */
-      height: 50px;
-      background: url('your-logo.png') no-repeat center center;
-      background-size: contain;
+    .navbar a:hover {
+      text-decoration: underline;
     }
     .content {
-      max-width: 1300px; /* slightly wider content area */
-      margin: 80px auto;  /* larger vertical margin */
-      padding: 0 50px;
-      font-size: 20px;  /* larger text */
-      line-height: 1.7;
-      color: #000;
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 0 40px;
+      font-size: 20px;
+      line-height: 1.6;
     }
-    .section-title {
-      font-size: 28px;
-      font-weight: 700;
+    .content h2 {
+      font-size: 26px;
       margin-top: 40px;
-      margin-bottom: 10px;
-      border-bottom: 2px solid black;
-      display: inline-block;
-      padding-bottom: 3px;
-    }
-    ul {
-      padding-left: 20px;
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -64,12 +59,11 @@
   <div class="banner">
     <div class="navbar">
       <a href="our-team.html">Our Team</a>
-      <a href="publications.html">Publications</a>
-      <a href="projects.html">Projects</a>
-      <div class="spacer"></div>
-      <a href="conferences.html">Conferences</a>
-      <a href="educational.html">Educational</a>
-      <a href="contact.html">Contact Us</a>
+      <a href="#">Publications</a>
+      <a href="#">Projects</a>
+      <a href="#">Conferences</a>
+      <a href="#">Educational</a>
+      <a href="#">Contact Us</a>
     </div>
   </div>
 
@@ -78,26 +72,28 @@
       CHIRP is comprised of a team of basic research and clinician scientists at the forefront of cutting-edge research and innovative study design. CHIRP was developed to streamline multidisciplinary research with a specific focus on team science. The axis of our program centers on the advancement of knowledge pertaining to gastrointestinal, hepatobiliary, and pancreatic diseases in dogs and cats, coupled with dedicated enhancement of animal and human health through translational scientific discoveries.
     </p>
 
-    <h2 class="section-title">Vision</h2>
+    <h2>Vision</h2>
     <p>
       Establish an integrated research team dedicated to leading multidisciplinary research endeavors aimed at enhancing hepatobiliary and intestinal comparative and translational medicine.
     </p>
 
-    <h2 class="section-title">Mission</h2>
+    <h2>Mission</h2>
     <p>
       To advance collaborative research at the interface of animal and human health.
     </p>
 
-    <h2 class="section-title">Strategic Goals</h2>
-    <ul>
-      <li>Enhance collaborative research efforts focused on gastrointestinal, liver, and pancreatic diseases of companion animals.</li>
-      <li>Build on the unique and diverse strengths of CHIRP investigators, the OSU CVM, and broader OSU community to integrate expertise within this scientific space.</li>
-      <li>Develop and leverage translational large animal (canine and feline) models of naturally occurring hepatobiliary and intestinal diseases to enhance animal and human health.</li>
-      <li>Promote lifelong academic curiosity within both the local and global scientific community through teaching, mentorship, synergistic learning, and discovery.</li>
-    </ul>
+    <h2>Strategic Goals</h2>
+    <p>
+      Enhance collaborative research efforts focused on gastrointestinal, liver, and pancreatic diseases of companion animals.<br>
+      Build on the unique and diverse strengths of CHIRP investigators, the OSU CVM, and broader OSU community to integrate expertise within this scientific space.<br>
+      Develop and leverage translational large animal (canine and feline) models of naturally occurring hepatobiliary and intestinal diseases to enhance animal and human health.<br>
+      Promote lifelong academic curiosity within both the local and global scientific community through teaching, mentorship, synergistic learning, and discovery.
+    </p>
 
-    <h2 class="section-title">Core Values</h2>
-    <p>Innovation, Collaboration, Transparency, Discovery, Credibility</p>
+    <h2>Core Values</h2>
+    <p>
+      Innovation, Collaboration, Transparency, Discovery, Credibility
+    </p>
   </div>
 
 </body>
