@@ -1,51 +1,83 @@
-body {
-  margin: 0;
-  background-color: #fbfbf9;
-  font-family: Arial, sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CHIRP Research Group</title>
+<style>
+  body {
+    margin: 0;
+    background-color: #fbfbf9;
+    font-family: Arial, sans-serif;
+  }
 
-.banner-container {
-  position: relative;
-  width: 100%;
-  max-height: 300px;
-}
+  .banner-container {
+    position: relative;
+    width: 100%;
+    background-color: #fbfbf9;
+  }
 
-.banner {
-  width: 100%;
-  max-height: 300px;
-  object-fit: cover;
-  display: block;
-}
+  .banner {
+    width: 100%;
+    height: auto;
+    object-fit: contain;  /* show whole image without cropping */
+    display: block;
+    background-color: #fbfbf9;
+  }
 
-nav.navbar {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(251, 251, 249, 0.7); /* keep semi-transparent bg */
-  padding: 15px 30px;
-  box-sizing: border-box;
-  z-index: 10;
-}
+  nav.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(251, 251, 249, 0.7); /* semi-transparent */
+    padding: 15px 30px;
+    box-sizing: border-box;
+    z-index: 10;
+  }
 
-.nav-group {
-  display: flex;
-  gap: 40px; /* more space between nav words */
-}
+  .nav-group {
+    display: flex;
+    gap: 40px; /* more space between nav words */
+  }
 
-.nav-spacer {
-  flex: 0 0 200px; /* big space in the middle */
-}
+  .nav-spacer {
+    flex: 0 0 200px; /* big space in the middle */
+  }
 
-.nav-link {
-  font-size: 18px;
-  color: black;
-  text-decoration: none;
-  font-weight: 600;
-}
+  .nav-link {
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+  }
 
-.nav-link:hover {
-  text-decoration: underline;
-}
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+
+<div class="banner-container">
+  <nav class="navbar" role="navigation" aria-label="Primary navigation">
+    <div class="nav-group">
+      <a href="our-team.html" class="nav-link">Our Team</a>
+      <a href="publications.html" class="nav-link">Publications</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+    </div>
+    <div class="nav-spacer"></div>
+    <div class="nav-group">
+      <a href="conferences.html" class="nav-link">Conferences</a>
+      <a href="educational.html" class="nav-link">Educational</a>
+      <a href="contact.html" class="nav-link">Contact Us</a>
+    </div>
+  </nav>
+
+  <img src="banner.png" alt="Banner Image" class="banner" />
+</div>
+
+</body>
+</html>
