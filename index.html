@@ -50,16 +50,31 @@
   /* Red ribbons */
   .ribbon {
     background-color: #bf1331;
-    height: 12px;
+    height: 40px;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
   }
   /* space between ribbons */
   .ribbon.spacer {
     margin-top: 20px;
     margin-bottom: 20px;
+    justify-content: flex-end; /* Right align text on bottom ribbon */
   }
+  .ribbon.left-text {
+    justify-content: flex-start; /* Left align text on top ribbon */
+  }
+  /* Text inside ribbons */
+  .ribbon-text {
+    color: #fbfbf9;
+    font-style: italic;
+    font-size: 16px;
+  }
+
   /* Logo positioned between ribbons */
   .ribbons-container .logo {
     position: absolute;
@@ -95,11 +110,15 @@
 
 <!-- Ribbons and logo section -->
 <div class="ribbons-container" aria-label="Logo between two ribbons">
-  <div class="ribbon"></div>
+  <div class="ribbon left-text">
+    <span class="ribbon-text">Harnessing the therapeutic power of microbes</span>
+  </div>
   <div class="logo">
     <img src="your-logo.png" alt="Your Logo" />
   </div>
-  <div class="ribbon spacer"></div>
+  <div class="ribbon spacer">
+    <span class="ribbon-text">Established since 2019</span>
+  </div>
 </div>
 
 </body>
