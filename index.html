@@ -1,3 +1,22 @@
+body {
+  margin: 0;
+  background-color: #fbfbf9;
+  font-family: Arial, sans-serif;
+}
+
+.banner-container {
+  position: relative;
+  width: 100%;
+  max-height: 300px;
+}
+
+.banner {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
 nav.navbar {
   position: absolute;
   top: 0;
@@ -5,8 +24,7 @@ nav.navbar {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 80px; /* space between logo and nav groups */
-  background-color: rgba(251, 251, 249, 0.7);
+  background-color: rgba(251, 251, 249, 0.7); /* keep semi-transparent bg */
   padding: 15px 30px;
   box-sizing: border-box;
   z-index: 10;
@@ -15,6 +33,10 @@ nav.navbar {
 .nav-group {
   display: flex;
   gap: 40px; /* more space between nav words */
+}
+
+.nav-spacer {
+  flex: 0 0 200px; /* big space in the middle */
 }
 
 .nav-link {
@@ -26,9 +48,4 @@ nav.navbar {
 
 .nav-link:hover {
   text-decoration: underline;
-}
-
-.nav-logo {
-  height: 80px; /* adjust as needed: makes logo big and visible */
-  object-fit: contain;
 }
