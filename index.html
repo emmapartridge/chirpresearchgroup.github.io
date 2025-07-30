@@ -15,16 +15,15 @@
 
     .banner {
       width: 100%;
-      height: auto;
       background: url('banner.png') no-repeat center center;
       background-size: cover;
+      height: 500px;
       position: relative;
-      padding-top: 500px; /* Ensures full display of banner height */
     }
 
     .navbar {
       position: absolute;
-      top: 40px;
+      top: 60px; /* lower the nav bar */
       left: 0;
       right: 0;
       display: flex;
@@ -38,12 +37,12 @@
       color: black;
       text-decoration: none;
       font-size: 22px;
-      margin: 0 50px;
+      margin: 0 45px;
       font-weight: 700;
     }
 
-    /* Add extra spacing after "Projects" */
-    .navbar a:nth-child(3) {
+    /* Add extra spacing specifically between "Projects" and "Conferences" */
+    .navbar a.projects {
       margin-right: 150px;
     }
 
@@ -52,9 +51,9 @@
     }
 
     .content {
-      max-width: 1600px; /* Wider content area */
+      max-width: 1600px;
       margin: 60px auto;
-      padding: 0 60px;
+      padding: 0 100px; /* wider margins */
       font-size: 20px;
       line-height: 1.6;
     }
@@ -72,7 +71,7 @@
     <div class="navbar">
       <a href="our-team.html">Our Team</a>
       <a href="#">Publications</a>
-      <a href="#">Projects</a>
+      <a href="#" class="projects">Projects</a>
       <a href="#">Conferences</a>
       <a href="#">Educational</a>
       <a href="#">Contact Us</a>
