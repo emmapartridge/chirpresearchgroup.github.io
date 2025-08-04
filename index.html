@@ -18,15 +18,19 @@
       height: 500px;
       background: url('banner.png') no-repeat center center;
       background-size: cover;
+      position: relative;
     }
 
     .navbar {
+      position: absolute;
+      top: 80px; /* Lowered to reveal more of the banner image */
+      left: 0;
+      right: 0;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
-      padding: 30px 0;
-      background-color: #fbfbf9; /* Light background so it's readable */
+      z-index: 2;
     }
 
     .navbar a {
@@ -38,7 +42,7 @@
     }
 
     .navbar a.projects {
-      margin-right: 150px;
+      margin-right: 150px; /* Extra space between Projects and Conferences */
     }
 
     .navbar a:hover {
@@ -62,15 +66,15 @@
 </head>
 <body>
 
-  <div class="banner"></div>
-
-  <div class="navbar">
-    <a href="our-team.html">Our Team</a>
-    <a href="#">Publications</a>
-    <a href="#" class="projects">Projects</a>
-    <a href="#">Conferences</a>
-    <a href="#">Educational</a>
-    <a href="#">Contact Us</a>
+  <div class="banner">
+    <div class="navbar">
+      <a href="our-team.html">Our Team</a>
+      <a href="#">Publications</a>
+      <a href="#" class="projects">Projects</a>
+      <a href="#">Conferences</a>
+      <a href="#">Educational</a>
+      <a href="#">Contact Us</a>
+    </div>
   </div>
 
   <div class="content">
