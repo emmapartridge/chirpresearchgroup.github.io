@@ -16,14 +16,14 @@
     .banner {
       width: 100%;
       height: 500px;
-      background: url('banner.png') no-repeat center center;
+      background: url('banner.png') no-repeat center top;
       background-size: cover;
       position: relative;
     }
 
     .navbar {
       position: absolute;
-      top: 80px; /* Lowered to reveal more of the banner image */
+      top: 60px;
       left: 0;
       right: 0;
       display: flex;
@@ -41,8 +41,9 @@
       font-weight: 700;
     }
 
+    /* Add extra spacing between "Projects" and "Conferences" */
     .navbar a.projects {
-      margin-right: 150px; /* Extra space between Projects and Conferences */
+      margin-right: 150px;
     }
 
     .navbar a:hover {
