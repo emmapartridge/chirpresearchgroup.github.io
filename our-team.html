@@ -10,21 +10,36 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+     }
+
+    .banner {
+      width: 100%;
+      background: url('our-team-banner.png') no-repeat center top; /* anchored to the top */
+      background-size: cover;
+      height: 600px;
+      position: relative;
     }
 
     .navbar {
-      background-color: #bf1331;
-      padding: 15px;
-      text-align: center;
+      position: absolute;
+      top: 120px; /* adjust so it sits on your black line */
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      z-index: 2;
     }
 
     .navbar a {
-      color: #fbfbf9;
+      color: black;
       text-decoration: none;
-      font-weight: bold;
-      padding: 0 20px;
-      font-size: 18px;
+      font-size: 22px;
+      margin: 0 55px;
+      font-weight: 700;
     }
+
 
     .team-section {
       margin: 2.5rem 0;
