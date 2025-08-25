@@ -3,112 +3,193 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Team - CHIRP</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Our Team</title>
   <style>
-    /* Page-specific styles */
-    .team-banner {
-      background-color: #b11c3f; /* red bar */
-      color: white;
-      font-size: 2rem;
-      font-weight: bold;
-      padding: 20px 40px;
-      display: inline-block;
-      margin-top: 20px;
-      clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
-    }
-
-    .section-title {
-      font-size: 1.3rem;
-      font-weight: bold;
-      margin: 40px 0 10px;
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 5px;
-      max-width: 300px;
-    }
-
-    .profile {
-      display: flex;
-      align-items: flex-start;
-      gap: 20px;
-      margin-bottom: 40px;
-    }
-
-    .profile img {
-      width: 150px;
-      height: auto;
-      border-radius: 12px;
-    }
-
-    .profile-text {
-      max-width: 600px;
-    }
-
-    .profile-text h3 {
+    body {
+      background-color: #fbfbf9;
+      font-family: Arial, sans-serif;
       margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      background-color: #bf1331;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .navbar a {
+      color: #fbfbf9;
+      text-decoration: none;
       font-weight: bold;
+      padding: 0 20px;
+      font-size: 18px;
     }
 
-    .contact-info {
-      margin-left: auto;
-      font-size: 0.9rem;
-      line-height: 1.5;
+    .team-section {
+      margin: 2.5rem 0;
+      padding: 0 20px;
     }
 
-    .profile-container {
+    .team-member {
       display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 2rem;
     }
+
+    .team-member img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      margin-right: 20px;
+    }
+
+    .bio {
+      max-width: 800px;
+    }
+
+    h2 {
+      color: #333;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #333;
+    }
+
+    .graduates-section {
+      margin: 3rem 0;
+      padding: 0 20px;
+    }
+
+    .graduate {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 1rem;
+    }
+
   </style>
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar">
-    <ul>
-      <li><a href="our-team.html">OUR TEAM</a></li>
-      <li><a href="publications.html">PUBLICATIONS</a></li>
-      <li><a href="projects.html">PROJECTS</a></li>
-      <li><a href="conferences.html">CONFERENCES</a></li>
-      <li><a href="educational.html">EDUCATIONAL</a></li>
-      <li><a href="contact.html">CONTACT US</a></li>
-    </ul>
-    <img src="images/logo.png" alt="CHIRP Logo" class="logo">
-  </nav>
 
-  <!-- Banner -->
-  <div class="team-banner">
-    Meet Our Team
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="our-team.html">Our Team</a>
+    <a href="publications.html">Publications</a>
+    <a href="projects.html">Projects</a>
+    <a href="conferences.html">Conferences</a>
+    <a href="educational.html">Educational</a>
+    <a href="contact.html">Contact Us</a>
   </div>
 
-  <!-- Section -->
-  <div class="container">
-    <h2 class="section-title">Principal Investigators</h2>
-    <div class="profile-container">
-      <div class="profile">
-        <img src="images/winston.jpg" alt="Dr. Jenessa Winston">
-        <div class="profile-text">
-          <h3>Dr. Jenessa Winston, DVM, PhD, DACVIM</h3>
-          <p>
-            Dr. Winston is an associate professor at The Ohio State University. She received a Bachelor of Science in 
-            integrated biology from the University of Florida in 2007 and a veterinary degree from North Carolina State 
-            University in 2011. She went on to complete a rotating small animal internship and residency training in 
-            small animal internal medicine at North Carolina State, achieving board certification as a diplomate in the 
-            American College of Veterinary Internal Medicine in 2015. As a clinician investigator and NIH T32 fellow at 
-            NC State, Dr. Winston completed a Ph.D. in comparative biomedical sciences with an infectious disease 
-            concentration in 2019. As a clinician scientist, Dr. Winston’s primary areas of interest include 
-            microbe-host interactions during health and disease, as well as rational manipulation of microbial 
-            ecosystems, including fecal microbiota transplantation.
-          </p>
-        </div>
-        <div class="contact-info">
-          <p>Email: winston.210@osu.edu</p>
-          <p>Phone: 614-292-4490</p>
-          <p><a href="#">CV</a></p>
-        </div>
+  <!-- Our Team Section -->
+  <div class="team-section">
+    <h1>Meet Our Team</h1>
+
+    <!-- Dr. Jenessa Winston -->
+    <div class="team-member">
+      <img src="dr-jenessa-winston.jpg" alt="Dr. Jenessa Winston">
+      <div class="bio">
+        <h2>Dr. Jenessa Winston, DVM, PhD, DACVIM</h2>
+        <p>Dr. Jenessa Winston is an associate professor at The Ohio State University. She received a Bachelor of Science in integrated biology from the University of Florida in 2007 and a veterinary degree from North Carolina State University in 2011. She went on to complete a rotating small animal internship and residency training in small animal internal medicine at North Carolina State, achieving board certification as a diplomate in the American College of Veterinary Internal Medicine in 2015. As a clinical investigator and NIH T32 fellow at NC State, Dr. Winston completed a Ph.D. in comparative biomedical sciences with an infectious disease concentration in 2019. As a clinician scientist, Dr. Winston’s primary areas of interest include microbe-host interactions during health and disease, as well as rational manipulation of microbial ecosystems, including fecal microbiota transplantation.</p>
+      </div>
+    </div>
+
+    <!-- Dr. Adam Rudinsky -->
+    <div class="team-member">
+      <img src="dr-adam-rudinsky.jpg" alt="Dr. Adam Rudinsky">
+      <div class="bio">
+        <h2>Dr. Adam Rudinsky, DVM, MS, DACVIM</h2>
+        <p>Dr. Rudinsky is an Associate Professor in the Small Animal Internal Medicine service at The Ohio State University Veterinary Medical Center. He received his DVM degree from The Ohio State University, completed a small animal rotating internship at Purdue University, and then a combined residency in internal medicine and MS degree at The Ohio State University. Following residency training he completed two post-doctoral research fellowships in Mucosal Immunology at The Ohio State University and Microbial Pathogenesis at Nationwide Children’s Hospital. He is now on faculty at Ohio State as a staff internist, research scientist and member of the American College of Veterinary Internal Medicine. His current clinical and research interests include gastrointestinal, pancreatic and hepatic disease, mucosal immunology, and the intestinal microbiome as it relates to disease pathophysiology and treatment.</p>
+      </div>
+    </div>
+
+    <!-- Dr. Valerie Parker -->
+    <div class="team-member">
+      <img src="dr-valerie-parker.jpg" alt="Dr. Valerie Parker">
+      <div class="bio">
+        <h2>Dr. Valerie Parker, DVM, DACVIM</h2>
+        <p>Dr. Dr. Parker is currently a Professor – Clinical at The Ohio State University. She received her DVM from Tufts University, followed by a small animal internship at the Animal Medical Center in New York City. She then completed a small animal internal medicine residency at Iowa State University and a nutrition residency at Tufts University. She is a diplomate of the American College of Veterinary Internal Medicine (SAIM and Nutrition). Dr. Parker’s primary areas of interest include kidney disease, gastrointestinal disease, and vitamin D metabolism, as well as nutritional management of a variety of canine and feline diseases.</p>
+      </div>
+    </div>
+
+    <!-- Dr. Megan Schreeg -->
+    <div class="team-member">
+      <img src="dr-megan-schreeg.jpg" alt="Dr. Megan Schreeg">
+      <div class="bio">
+        <h2>Dr. Megan Schreeg, DVM, PhD, DACVP</h2>
+        <p></p>
+      </div>
+    </div>
+
+    <!-- John Rowe -->
+    <div class="team-member">
+      <img src="john-rowe.jpg" alt="John Rowe">
+      <div class="bio">
+        <h2>John Rowe, DVM</h2>
+        <p></p>
+      </div>
+    </div>
+
+    <!-- Tomina Rahman -->
+    <div class="team-member">
+      <img src="tomina-rahman.jpg" alt="Tomina Rahman">
+      <div class="bio">
+        <h2>Tomina Rahman</h2>
+        <p></p>
+      </div>
+    </div>
+
+    <!-- Reagan Jennings -->
+    <div class="team-member">
+      <img src="reagan-jennings.jpg" alt="Regan Jennings">
+      <div class="bio">
+        <h2>Reagan Jennings</h2>
+        <p></p>
+      </div>
+    </div>
+
+    <!-- Kaitlyn Ingram -->
+    <div class="team-member">
+      <img src="kaitlyn-ingram.jpg" alt="Kaitlyn Ingram">
+      <div class="bio">
+        <h2>Kaitlyn Ingram</h2>
+        <p></p>
+      </div>
+    </div>
+
+    <!-- Molly Welton -->
+    <div class="team-member">
+      <img src="molly-welton.jpg" alt="Molly Welton">
+      <div class="bio">
+        <h2>Molly Welton</h2>
+        <p></p>
+      </div>
+    </div>
+
+    <!-- Emma Partridge -->
+    <div class="team-member">
+      <img src="emma-partridge.jpg" alt="Emma Partridge">
+      <div class="bio">
+        <h2>Emma Partridge</h2>
+        <p></p>
       </div>
     </div>
   </div>
+
+  <!-- CHIRP Alumni Section -->
+  <div class="alumni-section">
+    <h1>CHIRP Alumni</h1>
+    <div class="alumni">
+      <p>Dr. Nora Jean Nealon</p>
+    </div>
+    <div class="alumni">
+      <p>Dr. Nina Randolph</p>
+    </div>
+  </div>
+
 </body>
 </html>
-
